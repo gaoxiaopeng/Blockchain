@@ -1,0 +1,14 @@
+.header_Fix{height: 80px; width: 100%; z-index: 5; top: 0;left: 0;right: 0;margin: auto;background: #2F53B1; box-shadow:  0 2px 13px #444;}
+.header{height: 80px; width: 1200px; margin: 0 auto; }
+.logo{float: left; height: 80px; }
+.menu{float: left; box-sizing: border-box; }
+.menu li{position: relative; float: left; box-sizing: border-box;margin: 0 40px;font-family: '微软雅黑';font-size: 16px;color: white;border-bottom: 4px solid #2F53B1; }
+.menu li a{ float: left;color: white;text-decoration: none;margin-top: 30px;position: relative;}
+.menu .this_menu{border-bottom: 4px solid #48D4D6; color: #48D4D6;}
+.menu .this_menu a{ color: #48D4D6; }
+
+
+.menu a:hover{border-bottom: 4px solid #48D4D6; color: #48D4D6;}
+.menu a:hover{color: #48D4D6;}
+
+.cit{display: none; width: 10px;height: 10px;float: left;border-radius: 100%;background: red;position: absolute;top: -1px;right: -6px;}

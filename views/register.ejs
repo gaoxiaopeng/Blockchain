@@ -1,0 +1,175 @@
+<%include layout/webheader.ejs%>
+<link rel="stylesheet" href="/static/css/model/user.css">
+<link rel="stylesheet" href="/static/css/layout/header.css">
+<div class="header_Fix">
+    <div class="header">
+        <a href="/"><img src="/static/img/layout/l0.png" class="logo" alt=""></a>
+        <img src="/static/img/layout/l1.png" class="logo" alt="">
+        <ul class="menu">
+            <li><a href="/user">用户中心</a></li>
+            <li><a href="/sign">合同签署</a></li>
+            <li><a href="/manage">合同管理</a></li>
+        </ul>
+    </div>
+</div>
+<div class="new_Content">
+    <div class="single userContent">
+        <div class="single userBox">
+			<div class="layui-tab">
+			  <ul class="layui-tab-title" id="J_registerTab">
+				<li class="layui-this" data-value="personal">个人身份认证</li>
+				<li data-value="company">企业认证</li>
+			  </ul>
+			  <div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+				 <ul class="single userList">
+				     <li class="single">
+				         <p>姓名：</p>
+				         <div><input type="text" id="name"></div>
+				     </li>
+				     <li class="single">
+				         <p>身份证号：</p>
+				         <div><input type="text" id="idCard"></div>
+				     </li>
+				     <li class="single">
+				         <p>手机号：</p>
+				         <div><input type="text" id="phone" maxlength="11" ></div>
+				     </li>
+				     <li class="single">
+				         <p>验证码：</p>
+				         <div>
+				             <input type="text" class="in1" id="verifyCode">
+				             <button class="userSendBtn" id="getVerifyCode">发送验证码</button>
+				         </div>
+				     </li>
+				     <li class="single">
+				         <p>上传本人照片：</p>
+				         <div><img src="/static/img/model/upload.png" alt="" id="memberImgIco"  onclick="$('input[id=fileUser]').click();"></div>
+				         <input type="hidden" id="memberImg" value="">
+				     </li>
+				     <li class="single">
+				         <p>上传身份证正面：</p>
+				         <div><img src="/static/img/model/upload.png" alt=""  id="idCardFrontImgIco"  onclick="$('input[id=fileidCardFront]').click();"></div>
+				         <input type="hidden" id="idCardFrontImg" value="">
+				     </li>
+				     <li class="single">
+				         <p>上传身份证反面：</p>
+				         <div><img src="/static/img/model/upload.png" alt=""  id="idCardBackImgIco"  onclick="$('input[id=fileidCardBack]').click();"></div>
+				         <input type="hidden" id="idCardBackImg" value="">
+				     </li>
+				 </ul>
+				</div>
+				<div class="layui-tab-item">
+					<!--begin 2019-1-16   新增企业认证-->
+					<ul class="single userList">
+					     <li class="single">
+					        <p>企业名称：</p>
+					        <div><input type="text" id="qyName"></div>
+					    </li>
+						<li class="single">
+					        <p>统一社会信用码：</p>
+					        <div><input type="text" id="qyCreditCode"></div>
+					    </li>
+						<li class="single">
+						    <p>上传营业执照扫描件：</p>
+						    <div><img src="/static/img/model/upload.png" alt="" id="qyBusinessLicenseImgDemo"  onclick="$('input[id=qyBusinessLicenseImgFile]').click();"></div>
+						    <input type="hidden" id="qyBusinessLicenseImg" value="">
+						</li>
+					    <li class="single">
+					        <p>法人身份证号：</p>
+					        <div><input type="text" id="qyIdCard" maxlength="18"></div>
+					    </li>
+					    <li class="single">
+					        <p>上传法人身份证正面：</p>
+					        <div><img src="/static/img/model/upload.png" alt=""  id="qyIdCardFrontImgDemo"  onclick="$('input[id=qyIdCardFrontImgFile]').click();"></div>
+					        <input type="hidden" id="qyIdCardFrontImg" value="">
+					    </li>
+					    <li class="single">
+					        <p>上传法人身份证反面：</p>
+					        <div><img src="/static/img/model/upload.png" alt=""  id="qyIdCardBackImgDemo"  onclick="$('input[id=qyIdCardBackImgFile]').click();"></div>
+					        <input type="hidden" id="qyIdCardBackImg" value="">
+					    </li>
+						
+						 <li class="single">
+						    <p>管理员手机号：</p>
+						    <div><input type="text" id="qyPhone" maxlength="11" ></div>
+						</li>
+						<li class="single">
+						    <p>验证码：</p>
+						    <div>
+						        <input type="text" class="in1" id="qyVerifyCode">
+						        <button class="userSendBtn" id="qyGetVerifyCode">发送验证码</button>
+						    </div>
+						</li>
+						
+					</ul>
+					<!--end 2019-1-16-->
+					
+				</div>
+				
+			  </div>
+			</div>
+		
+            
+        </div>
+        <div class="single userBox">
+            <div class="single userTitle">公私钥生成</div>
+            <div class="single keyBox">
+                <input type="text" class="alias" disabled id="alias" placeholder="同步手机号">
+                <input type="text" class="auth" id="J_privateKeyPwd" placeholder="请输入私钥密码">
+                <span style="clear: both;"></span>
+                <span class="litip">*温馨提示,此密码不可修改,不可找回,功能操作都需要密码校验,请牢记</span>
+              <!--  <div class="single"><p class="keyBtn kb1" id="creat_Key">点击生成公私钥</p></div>
+                <span class="single keyTxt">您的公钥：</span>
+                <span class="publicKeys" id="publicKeys"></span>
+ -->
+                <div class="single"><p class="keyBtn kb2" id="J_registerBtn">注册</p></div>
+				<div class="single"><p class="keyBtn kb2" style="display:none" id="J_qyRegisterBtn"> 企业注册</p></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<input type="hidden" id="keyData">
+<form style="display: none;" id="fileUserForm" method="post">
+    <input  name="file" type="file" style="display: none;" accept = "image/*" id="fileUser"  data-header="">
+</form>
+<form style="display: none;" id="fileidCardFrontForm" method="post">
+    <input  name="file" type="file" style="display: none;" accept = "image/*" id="fileidCardFront"  data-header="">
+</form>
+<form style="display: none;" id="fileidCardBackForm" method="post">
+    <input  name="file" type="file" style="display: none;" accept = "image/*" id="fileidCardBack"  data-header="">
+</form>
+<!-- 企业上传图片  -->
+<form style="display: none;" id="qyBusinessLicenseImgForm" method="post">
+    <input  name="file" type="file" style="display: none;" accept = "image/*" id="qyBusinessLicenseImgFile"  data-header="">
+</form>
+<form style="display: none;" id="qyIdCardFrontImgForm" method="post">
+    <input  name="file" type="file" style="display: none;" accept = "image/*" id="qyIdCardFrontImgFile"  data-header="">
+</form>
+<form style="display: none;" id="qyIdCardBackImgForm" method="post">
+    <input  name="file" type="file" style="display: none;" accept = "image/*" id="qyIdCardBackImgFile"  data-header="">
+</form>
+
+
+
+
+ <script src="/static/js/wasm/wasm.js"></script> 
+<script src="/static/js/index/register.js"></script>
+<script src="/static/js/index/registerQy.js"></script>
+<script >
+$(function(){
+	 $("#J_registerTab").on("click","li",function(){
+		 if($(this).data("value")=="company"){//公司
+			 $("#J_registerBtn").hide();
+			 $("#J_qyRegisterBtn").show();
+		 }else{//个人
+			  $("#J_registerBtn").show();
+			 $("#J_qyRegisterBtn").hide();
+		 }
+	 })
+	
+})
+ 
+</script>
+<%include layout/nullfooter.ejs%>

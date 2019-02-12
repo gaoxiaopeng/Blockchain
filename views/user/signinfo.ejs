@@ -1,0 +1,81 @@
+<div class="user_FunCon ">
+  <p class="single user_AccountTitle">我的签章</p>
+  <ul class="single user_SignList" id="user_SignList"></ul>
+  <div class="single sign_Choice">
+    <div class="sign_file" id="openWebCode">
+      <img src="/static/img/model/add.png" alt="">
+      <span>在线添加签章</span>
+    </div>
+    <div class="sign_file" id="openLocal">
+      <img src="/static/img/model/add.png" alt="">
+      <span>从本地添加签章</span>
+    </div>
+		<div class="sign_file" id="openCanvas">
+		  <img src="/static/img/model/add.png" alt="">
+		  <span>手写签章</span>
+		</div>
+  </div>
+</div>
+<div class="sign_Fade" id="localFade">
+  <div class="sign_Get">
+    <button class="file_Btn" onclick="$('input[id=fileLocal]').click();">选择本地文件</button>
+    <p class="file_Name" id="file_Name"></p>
+    <div class="img-preview preview-lg"></div>
+    <div style="clear: both;"></div>
+    <div class="fileImgBox">
+      <div class="img-container" id="img-container">
+        <img src="/static/img/crop.png" id="img-corp">
+      </div>
+    </div>
+    <p style="font-size: 13px;color: red">*请上传png格式的透明图片,否则含有底色的图片会覆盖合同,影响签约</p>
+    <div class="single sign_GetBtnBox">
+      <button id="saveLocal" data-method="getCroppedCanvas">保&nbsp;存</button>
+      <button id="cancelLocal">取&nbsp;消</button>
+    </div>
+  </div>
+</div>
+
+<div class="sign_Fade" id="canvasDrow">
+ <div class="canvasBox">
+     <canvas id="myCanvas" width="500" height="300" style="border:1px solid #6699cc"></canvas>
+     <div class="control-ops control">
+         <button type="button" class="btn btn-primary" onclick="javascript:clearArea();return false;">清空画板</button>
+         线条宽度 : <select id="selWidth" onchange="aaa()">
+         <option value="1">1</option>
+         <option value="3" selected="selected">3</option>
+         <option value="5">5</option>
+         <option value="7">7</option>
+         <option value="9">9</option>
+         <option value="11">11</option>
+     </select>
+         颜色 : <select id="selColor" onchange="aaa2()">
+         <option value="black" selected="selected">black</option>
+         <option value="blue">blue</option>
+         <option value="red">red</option>
+         <option value="green">green</option>
+         <option value="yellow">yellow</option>
+         <option value="gray">gray</option>
+     </select>
+         <button type="button" class="btn btn-primary" onclick="javascript:saveImageInfo();return false;"><i class="layui-icon layui-icon-camera"></i>保存</button>
+     </div>
+     <div class="saveimgs"></div>
+ </div>
+</div>
+
+
+
+<div class="sign_Fade" id="webCode">
+  <div id="code_Box" class="code_Box box_Center ">
+    <img src="/static/img/layout/close.png" alt="" class="fade_Close">
+    <img src="/static/img/code.png" class="code_Img" alt="">
+    <p class="code_Txt single">扫码添加签章</p>
+  </div>
+</div>
+
+
+
+<!---->
+<form  id="formLocal" style="display: none;" method="post">
+  <input  name="file" type="file" style="display: none;" accept = "image/png" id="fileLocal"  data-header="">
+</form>
+

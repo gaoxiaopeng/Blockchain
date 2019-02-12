@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/static/css/model/signlayout.css">
+<div id="add_sign" class="fade_Box" >
+  <div id="main_Evt" class="add_Box box_Center ">
+    <img src="/static/img/layout/close.png" alt="" class="fade_Close">
+    <button class="add_Btn" id="code_Evt">在线扫码添加签章</button>
+    <button class="add_Btn" id="file_Evt">从本地添加签章</button>
+    <button class="add_Btn" id="sign_Evt">从“我的签章”添加</button>
+  </div>
+  <!--在线扫码添加签章-->
+  <div id="code_Box" class="code_Box box_Center dino">
+    <img src="/static/img/layout/close.png" alt="" class="fade_Close">
+    <img src="/static/img/code.png" class="code_Img" alt="">
+    <p class="code_Txt single">扫码添加签章</p>
+  </div>
+  <!--从本地添加签章-->
+  <div id="file_Box" class="sign_Get">
+    <button class="file_Btn" onclick="$('input[id=fileLocal]').click();">选择本地文件</button>
+    <p class="file_Name" id="file_Name"></p>
+    <div class="img-preview preview-lg"></div>
+    <div style="clear: both;"></div>
+    <div class="fileImgBox">
+      <div class="img-container" id="img-container">
+        <img src="/static/img/crop.png" id="img-corp">
+      </div>
+    </div>
+    <p style="font-size: 13px;color: red">*请上传png格式的透明图片,否则含有底色的图片会覆盖合同,影响签约</p>
+    <div class="single sign_GetBtnBox">
+      <button id="saveLocal" data-method="getCroppedCanvas">保&nbsp;存</button>
+      <button id="cancelLocal">取&nbsp;消</button>
+    </div>
+  </div>
+
+  <!--从我的签章添加-->
+  <div id="sign_Box" class="sign_List_Box box_Center dino">
+    <img src="/static/img/layout/close.png" style="right: 10px;top: 10px;" alt="" class="fade_Close">
+    <ul class="single user_SignList" id="user_SignList"></ul>
+    <div class="single user_BtnBox">
+      <button id="signList_Ok">确&nbsp;定</button>
+      <button class="fade_cancel">取&nbsp;消</button>
+    </div>
+  </div>
+</div>
+<!---->
+<form  id="formLocal" style="display: none;" method="post">
+  <input  name="file" type="file" style="display: none;" accept = "image/png" id="fileLocal"  data-header="">
+</form>
+<script src="/static/js/sign/addsign.js"></script>
+

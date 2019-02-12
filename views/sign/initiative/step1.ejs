@@ -1,0 +1,100 @@
+<%include ../../layout/webheader.ejs%>
+<link rel="stylesheet" href="/static/css/model/sign.css">
+<%include ../layout/signheader.ejs%>
+<div class="new_Content">
+  <div class="single step_Con">
+    <p class="single step_Tit">Step1 上传文件</p>
+    <div class="single step_Box">
+      <div class="step_file">
+        <img src="/static/img/model/upfile.png" id="fileContImg" alt="" onclick="$('input[id=fileCont]').click();">
+        <form  id="fileContForm" method="post" style="display: none;">
+          <input  name="file" type="file" style="display: none;" accept = ".pdf" id="fileCont"  data-header="">
+        </form>
+      </div>
+      <div class="step_Info">
+        <div class="step_InfoSingle">
+          <span class="step_Txt">设置合同名称：</span>
+          <div class="step_InBox"><input type="text" id="contactName"></div>
+        </div>
+        <div class="step_InfoSingle">
+          <span class="step_Txt">设置截止日期：</span>
+          <div class="step_InBox">
+            <input type="text" id="contactTime" class="layui-input" >
+            <img class="calendar" src="/static/img/model/calendar.png" alt="">
+          </div>
+        </div>
+				<div class="step_InfoSingle">
+				  <span class="step_Txt">设置合同有效期：</span>
+				  <div class="step_InBox">
+				    <input type="text" id="contactEffectiveTime" class="layui-input" >
+				    <img class="calendar" src="/static/img/model/calendar.png" alt="">
+				  </div>
+				</div>
+				 <div class="step_InfoSingle">
+				  <span class="step_Txt">设置标签：</span>
+				  <div class="step_InBox">
+						
+					
+						<select name="modules" lay-verify="required" lay-search="" id="J_lableList"></select>
+						<i title="新增标签" class="layui-icon layui-icon-add-1" style="position: absolute;font-size: 25px;padding: 3px 20px;" id="J_addLable"></i>
+						</div>
+				</div>
+			
+        <div class="step_InfoSingle">
+          <span class="step_Txt">备注信息：</span>
+          <div class="step_InBox"><input type="text" id="contactRemark"></div>
+        </div>
+        <div class="step_InfoSingle">
+          <span class="step_Txt">是否发起绝密合同：</span>
+          <form class="layui-form">
+            <input type="checkbox" id="contactSecret" data-checked="false" name="switch" lay-filter="contactSecret" lay-text="ON|OFF" lay-skin="switch">
+          </form>
+          <p class="step_Tip">
+            <img src="/static/img/model/tip.png" alt="">
+            <span>您的合同将不会上传至服务器保存，只有签署双方可见。</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="single step_Tit">Step2 选择签署方</p>
+    <div class="single step_Box" style="padding-top: 0;">
+      <img src="/static/img/model/user.png" style="float: left;margin: 18px 0;" alt="">
+      <ul class="single step_List" id="sign_User"></ul>
+      <div class="step_Add">+添加签署方</div>
+      <div class="single step_Next">
+        <button id="toSignnext">下一步</button>
+      </div>
+    </div>
+  </div>
+  <div id="add_Link" class="fade_Box">
+    <div class="step_User">
+      <img src="/static/img/layout/close.png" alt="" class="fade_Close">
+      <p class="step_UserTit">请选择要添加的联系人：</p>
+      <div class="step_UserLeft">
+        <div class="step_UserSearch">
+          <img src="/static/img/model/serch.png" alt="">
+          <input type="text" id="search">
+        </div>
+        <ul class="single step_User_List" id="serch_List"></ul>
+      </div>
+      <div class="step_UserRight">
+        <ul class="single step_User_List_Done" id="step_User_Done">
+          <li class="top">
+            <span>已添加列表</span>
+          </li>
+        </ul>
+      </div>
+      <div class="single step_User_CerBtn">
+        <button id="step_User_CerBtn">确认</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="/static/js/sign/step1.js"></script>
+
+
+<%include ../../layout/nullfooter.ejs%>

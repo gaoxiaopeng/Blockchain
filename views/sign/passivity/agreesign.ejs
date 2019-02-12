@@ -1,0 +1,23 @@
+<%include ../../layout/webheader.ejs%>
+<link rel="stylesheet" href="/static/css/model/sign.css">
+<%include ../layout/signheader.ejs%>
+<div class="new_Content">
+  <div class="single sign_Result">
+    <div class="single">
+      <img class="result_Img" src="/static/img/model/ok.png" alt="">
+    </div>
+    <p class="single result_Tit">您已成功签署合约</p>
+    <div class="single sign_Name">
+      <span>合同名称：<span id="contractName"></span></span>
+      <span>截止日期：<span id="endTime"></span></span>
+    </div>
+    <ul class="single result_List"  id="result_List">
+    </ul>
+    <div class="single result_Opr">
+      <button id="gotSigniInfo">合同信息</button>
+      <button><a href="/passivesign">返回主页</a></button>
+    </div>
+  </div>
+</div>
+<script src="/static/js/sign/agreesign.js"></script>
+<%include ../../layout/nullfooter.ejs%>

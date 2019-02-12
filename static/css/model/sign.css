@@ -1,0 +1,150 @@
+/*签约步骤*/
+.step_Con{;padding: 60px 98px;}
+.step_Tit{height: 55px;  line-height: 55px;  color: #2F53B1;  font-weight: bold;  border-bottom: 1px solid #01237C;  text-align: left;  font-size: 18px;}
+.step_Box{padding: 35px 0 35px 35px;}
+.step_file{float: left;width: 215px;padding-top: 36px;}
+.step_file img{width: 180px;height: 220px;cursor: pointer;}
+.step_Info{float: left;width: 750px;}
+.step_InfoSingle{margin-bottom: 20px;float: left;width: 100%;box-sizing: border-box;}
+.step_Txt{float: left;width: 205px;height: 40px;line-height: 40px;text-align: right;font-size: 16px;}
+.step_InBox{float: left;width: 450px;height: 40px;background: #E6E6E6;font-size: 18px;position: relative;}
+.step_InBox>input{float: left;width: 100%;height: 40px;outline: none;box-sizing: border-box;line-height: 40px;background: none;border: 0;padding-left: 15px;}
+.step_InBox>select{float: left;width: 100%;height: 40px;outline: none;box-sizing: border-box;line-height: 40px;background: none;border: 0;padding-left: 15px;}
+
+.calendar{position: absolute;height: 19px;right: 10px;top: 0 ;bottom: 0;margin: auto;}
+.layui-form-switch i{top: 6px;}
+.layui-form-onswitch{background: #2F53B0;border-color:#2F53B0}
+.layui-form-switch {  height: 30px; width: 65px; line-height: 30px;  margin-top: 5px;  }
+.step_Tip{font-size: 12px;float: left;width: 320px; color: #333;border: 1px solid #333;line-height: 15px;;;padding: 2px;border-radius: 10px;margin-top: 15px;}
+.step_Tip img{height:12px;float: left;margin-top: 1px;margin-right: 2px;}
+.step_List li{float: left;width: 100%;box-sizing: border-box;height:70px;line-height: 70px;font-size: 18px;margin-bottom: 20px;}
+.list_Bor{float: left;width: 570px;height: 70px;border: 1px solid #333;padding: 15px 0;}
+.list_Bor>span{float: left;font-size: 20px;width: 40px;text-align: center;line-height: 40px;}
+.list_Bor>input{float: left;width: 250px;height: 40px;margin-right: 13px; line-height: 40px;background: #E6E6E6; box-sizing: border-box;padding-left: 15px;font-size: 18px;outline: none;border: 0;}
+.step_List li>button{float: left;margin-left: 20px; width: 125px;height: 35px;line-height: 35px;font-size: 16px;color: white;border-radius: 5px;margin-top: 20px; background: #758CCA; box-sizing: border-box;}
+.step_List li>button:hover{background: #6279B6;}
+.step_Add{float: left;width: 940px;height: 70px;line-height: 69px;text-align: center;font-size: 20px;font-weight: bold;cursor: pointer;border: 1px dashed #333;}
+.step_Next{margin-top: 90px;}
+.step_Next button{display: block;margin: 0 auto; width: 165px;height: 35px;;line-height: 35px;font-size: 16px;color: white;border-radius: 5px; background: #758CCA; box-sizing: border-box;}
+.step_Next button:hover{background: #6279B6;}
+.step_User{width: 730px;height: 465px;border-radius: 10px;box-sizing: border-box;padding: 25px 40px; position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;background: white;}
+.fade_Close{width: 30px;position: absolute;right: 20px;top: 20px;cursor: pointer;}
+.step_UserTit{float: left;width: 100%;height: 30px;line-height: 30px;font-size: 16px;}
+.step_UserLeft{float: left;width: 380px;border-right: 1px solid #E2E7F0;box-sizing: border-box;padding-right: 24px;}
+.step_UserSearch{float: left;width: 100%;background: #E6E6E6; height: 40px;line-height: 40px;margin: 15px 0 25px 0;}
+.step_UserSearch img{float: left; width: 40px;}
+.step_UserSearch input{background: none;font-size: 16px; outline: none;border: 0;float: left;width: 310px;box-sizing: border-box;}
+.step_User_List{border: 1px solid #DDD;overflow-y: auto;}
+.step_User_List .top{background: #8091BD;color: white;font-weight: bold;cursor: default;}
+.step_User_List li{color: #9E9E9E;font-size: 14px;border-bottom: 1px solid #DDD;cursor: pointer;overflow: hidden;}
+.step_User_List li span{width: 50%;float: left;text-align: center;height: 45px;line-height: 45px;}
+.step_UserRight{float: left;padding-top: 80px;width: 265px;box-sizing: border-box;padding-left: 24px;}
+.step_User_List_Done{border: 1px solid #ddd;overflow-y: auto;}
+.step_User_List_Done .top{background: #8091BD;color: white;font-weight: bold;}
+.step_User_List_Done li{color: #9E9E9E;font-size: 14px;height: 45px;border-bottom: 1px solid #01237C;line-height: 45px;position: relative;}
+.step_User_List_Done li span{width: 100%;float: left;text-align: center;}
+.step_User_List_Done li i{position: absolute;right: 10px;top: 0;bottom: 0;margin: auto;font-weight: bold;font-size: 22px;cursor: pointer;}
+.step_User_CerBtn {margin-top: 35px;}
+.step_User_CerBtn button{width: 125px;margin: 0 auto ;text-align: center;;display: block;background:#758CCA;color: white;line-height: 36px;height: 36px;border-radius: 5px; }
+.step_User_CerBtn button:hover{background: #6279B6;}
+
+
+
+
+
+
+
+
+
+
+/*开始签约拖拽生成签约合同*/
+.sign_Con{padding-top: 40px;float: left;width: 100%;box-sizing: border-box;}
+.back_Manage{height: 35px;float: left;width: 155px;height: 36px;line-height: 36px;border-radius: 10px;background: #758CCA;}
+.back_Manage:hover{background: #6279B6;}
+.back_Manage a{float: left;width: 100%;color: white;text-decoration: none; line-height: 36px;text-align: center;}
+.sign_Box{margin-top: 20px;border-top:1px solid #ddd;}
+.sign_Left{float: left;width: 280px;box-sizing: border-box;border:1px solid #ddd;padding: 20px;}
+.bacDC{background: #DCDCDC;color: #333;}
+.intro_Txt{float: left;width: 100%;height: 50px;line-height: 50px;margin-top: 10px;text-align: left;font-size: 18px;color: #4463B7;font-weight: bold;}
+.intro_Signle li{height: 35px;line-height: 35px;float: left;width: 100%;}
+.intro_Signle span{font-size: 14px;height: 35px;width: 70%;line-height: 35px;color: #333;float: left;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;}
+.intro_Signle span.left{width: 30%;}
+.sign_Img{width: 135px;height: 135px;position: relative; margin-left: 28px;float: left;border: dashed 2px #2F53B1;box-sizing: border-box;padding: 15px;}
+.sign_Img img{width: 100%;}
+.drag_Box{width: 100px;height: 100px;;position: absolute;z-index: 3;}
+.drag_Box img{width: 100%;}
+.intro_Drag{float: left;width: 100%;font-size: 13px;line-height: 25px;}
+.change_Btn{width: 160px;margin-top: 20px; text-align: center; margin-left: 28px;float: left;background:#758CCA;color: white;line-height: 36px;height: 36px;border-radius: 5px; }
+.change_Btn:hover{background: #6279B6;}
+.sign_Right{float: right;width: 900px;}
+.MainBox{width: 900px;border: 1px solid #ccc;border-radius: 5px; position: relative;margin-top: 20px; height: 500px;overflow-y: scroll; text-align: center;;float: left;}
+.MainBox>img{width: 100%;}
+.ImgBoxMain{float: left;width: 100%;box-sizing: border-box;position: relative;}
+.ImgBoxMain>img{width: 100%;}
+.MainBox .drag_Box{border: 1px dashed #ccc;}
+.DragBox{width: 100%;position: absolute;top: 0;left: 0;z-index: 2;height: 100%;}
+.Corner{position: absolute;width: 10px;height: 10px;bottom: 0;right: 0; background: #ccc;}
+.sing_close{position: absolute;top: -11px;right: -11px;width: 20px;height: 20px;cursor: pointer; background: url("../../img/demo/signDemo/cl.png") 0 0 no-repeat;background-size: 100%; }
+.sign_Opr {margin-top: 34px;height: 36px;}
+.sign_Opr button{width: 160px;margin: 0 85px; ;text-align: center;;float: left;background:#758CCA;color: white;line-height: 36px;height: 36px;border-radius: 5px; }
+.sign_Opr button:hover{background: #6279B6;}
+
+
+
+
+/*签约结果*/
+.sign_Result{padding:40px 95px; }
+.result_Img{display: block;margin: 0 auto;width: 85px;}
+.result_Tit{font-size: 20px;color: #2f53b1;text-align: center;line-height: 30px;margin-top: 30px;font-weight: bold;}
+.sign_Name{line-height: 30px;font-size: 18px;color: #939393;text-align: center;margin: 30px auto;}
+.sign_Name span{margin:0 30px;}
+.result_List{border: 1px solid #DDD;}
+.result_List .top{background: #8091BD;color: white;font-weight: bold;}
+.result_List li{color: #9E9E9E;font-size: 16px;height: 40px;border-bottom: 1px solid #DDD;line-height: 40px;}
+.result_List li span{width: 33.3%;float: left;text-align: center;border-right: 1px solid #ddd;}
+.result_List li span:last-child{border-right: 0px}
+.result_Opr {margin-top: 55px;height: 36px;width: 1010px;text-align: center;}
+.result_Opr button{width: 160px;margin: 0 50px; text-align: center;background:#758CCA;color: white;line-height: 36px;height: 36px;border-radius: 5px; }
+.result_Opr button:hover{background: #6279B6;}
+
+
+/*签约信息*/
+.info_Box{padding: 60px 40px;}
+.info_IntroBox{margin-bottom: 15px;}
+.info_Intro{font-size: 16px;color: #333;float: left;width: 100%;line-height: 30px;margin-bottom: 10px;}
+.info_Intro p,.info_Intro span{float: left;}
+.mL55{margin-left: 55px;}
+.w270{width: 270px;}
+.info_Look{color: #5199e9;text-decoration: underline;margin: 0 10px;cursor: pointer;}
+.info_Tit{float: left;width: 100%;font-size: 18px;height: 60px;line-height: 60px;text-align: left;}
+.info_List{border: 1px solid #ddd;margin-bottom: 15px;}
+.info_List .top{background: #8091BD;color: white;font-weight: bold;}
+.info_List li{color: #9E9E9E;font-size: 16px;height: 40px;border-bottom: 1px solid #ddd;line-height: 40px;}
+.info_List li span{width: 33.3%;float: left;text-align: center;border-right:1px solid #DDDDDD;}
+.info_List_Two li span {width: 100%;}
+.info_Botxt{font-size: 18px;line-height: 30px;}
+.fs14{font-size: 14px;}
+.back_SignBtn{margin: 60px 0;}
+.back_SignBtn button{width: 160px;margin: 0 auto ;text-align: center;;display: block;background:#758CCA;color: white;line-height: 36px;height: 36px;border-radius: 5px; }
+.back_SignBtn button:hover{background: #6279B6;}
+
+
+
+
+.img-container,
+.img-preview {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.img-container img{    transition: none;}
+
+.preview-lg {
+    width: 35px;
+    height: 35px;
+    float: left;;
+    margin-left: 20px;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,<br> initial-scale=1,<br> minimum-scale=1,<br> maximum-scale=1,<br>user-scalable=no">
+    <title>签章Demo</title>
+    <link rel="stylesheet" href="/static/plugin/jqUI/jquery-ui.css">
+    <script src="/static/plugin/jqUI/jquery.js"></script>
+    <script src="/static/plugin/jqUI/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/static/css/demo/signDemo.css">
+</head>
+<body>
+
+<div class="LeftBox" >
+    <p class="Ltit">左侧工具栏</p>
+    <div class="SignBox" id="SignBox">
+        <div class="Box">
+            <img src="/static/img/logo.png"  class="" alt="">
+        </div>
+    </div>
+    <button class="CreBtn" onclick="create()">生成图片</button>
+</div>
+<div class="MainBox" id="MainBox">
+    <div class="DragBox" id="DragBox"></div>
+    <img id="bac" src="/static/img/demo/signDemo/bag.jpg" alt="">
+</div>
+<div class="MainBox" id="Result">
+    这里展示的是最终合并的图片
+</div>
+
+<script src="/static/js/demo/signDemo.js"></script>
+</body>
+</html>

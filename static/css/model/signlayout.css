@@ -1,0 +1,63 @@
+.fade_Close{width: 30px;position: absolute;right: 20px;top: 20px;cursor: pointer;}
+
+/*身份验证*/
+.box_Center{position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;background: white;border-radius: 10px;box-sizing: border-box;}
+.iden_Box{width: 380px;height: 330px;padding: 20px 35px;}
+.iden_Tit{height: 50px;line-height: 50px; border-bottom: 1px solid #123181;color: #123181;font-size: 24px;font-weight: bold;text-align: center;}
+.iden_Con{margin: 30px 0;}
+.iden_ConTxt{font-size: 16px;line-height: 35px;}
+.iden_Line input{height: 35px;line-height: 35px;margin-right: 12px; box-sizing: border-box;padding-left: 15px; font-size: 16px;background: white;outline: none;border: 1px solid #333;width: 175px;float: left;}
+.iden_Line button{float: left;background: #2F53B1; text-align: center;color: white;border-radius: 5px; width:115px;height: 35px;line-height: 35px;box-sizing: border-box; }
+.iden_Line button:hover{background: #6279B6;}
+.iden_CerBtn{margin-top: 20px;}
+.iden_CerBtn button{display: block;margin: 0 auto; background: #2F53B1; text-align: center;color: white;border-radius: 5px; width:115px;height: 35px;line-height: 35px;box-sizing: border-box; }
+.iden_CerBtn button:hover{background: #6279B6;}
+
+
+/*添加签章*/
+
+.add_Box{width: 380px;height: 430px;padding: 100px 20px;}
+.add_Btn{float: left;background: #2F53B1;margin-top: 32px; text-align: center;color: white;border-radius: 5px; width:100%;height: 35px;line-height: 35px;box-sizing: border-box; }
+.add_Btn:hover{background: #6279B6;}
+.code_Box{width: 380px;height: 430px;padding: 60px 55px;}
+.code_Img{float: left; width: 100%;}
+.code_Txt{line-height: 30px;font-size: 18px;text-align: center;margin-top: 20px;}
+
+.sign_Get{width: 600px;padding:30px; height:460px;box-sizing: border-box;border-radius: 10px;box-shadow: 0 0 20px #333; position: absolute;top: 0;right: 0;left: 0;bottom: 0;margin: auto;background: white;}
+.file_Btn{float: left;width:130px;height: 35px;cursor: pointer; line-height: 35px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 16px;}
+.file_Btn:hover{background:#253F85; }
+.file_Name{float: left;width:145px;height: 35px;line-height: 35px; margin-left: 10px;font-size: 16px; border: 1px solid #212121;background:white;color: #333;box-sizing: border-box;padding-left: 15px; }
+.fileImgBox{width: 100%;height: 250px;background: #E6E6E6;margin: 20px auto;}
+.sign_GetBtnBox{margin-top: 20px;padding: 0 15px;}
+.sign_GetBtnBox{margin-top: 20px;padding: 0 15px;}
+.sign_GetBtnBox button{float: left; width:120px;height: 35px;display: inline; cursor: pointer; line-height: 35px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 16px;}
+.sign_GetBtnBox button:last-child{float: right;}
+.sign_GetBtnBox button:hover{background: #6279B6;}
+#slider span{outline: none;border-radius: 100%;transition: none;background: white;cursor: pointer;}
+.img-container,
+.img-preview {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.img-container img{    transition: none;}
+
+.preview-lg {
+    width: 35px;
+    height: 35px;
+    float: left;;
+    margin-left: 20px;
+}
+
+.sign_List_Box{width: 630px;height: 430px;padding: 35px 35px 0 35px;}
+.user_SignList{;height: 315px; padding: 20px; background: #E6E6E6;border: 1px solid #ccc;overflow-y: scroll;overflow-x: hidden;}
+.user_SignList li{width: 150px;height: 150px;margin-right: 20px;box-sizing: border-box; margin-bottom: 20px; float: left;background: white;}
+.user_SignList li:nth-child(3n){margin-right: 0;}
+.user_SignList li img{width: 100%;}
+.this_Choice{border: 1px solid #01AAED;}
+.user_BtnBox{margin-top: 20px;padding: 0 100px;}
+.user_BtnBox button{float: left; width:120px;height: 35px;display: inline; cursor: pointer; line-height: 35px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 16px;}
+.user_BtnBox button:last-child{float: right;}
+.user_BtnBox button:hover{background: #6279B6;}

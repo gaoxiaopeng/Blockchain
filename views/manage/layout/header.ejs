@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/static/css/layout/header.css">
+<div class="header_Fix">
+  <div class="header">
+    <a href="/"><img src="/static/img/layout/l0.png" class="logo" alt=""></a>
+    <img src="/static/img/layout/l1.png" class="logo" alt="">
+    <ul class="menu">
+      <li ><a href="/user">用户中心</a></li>
+      <li><a href="/sign">合同签署</a></li>
+      <li  class="this_menu"><a href="/manage">合同管理</a></li>
+    </ul>
+			<a href="javascript:void(0);" class="loginOut" id="J_loginOut">退出</a>
+  </div>
+</div>
+<script>
+$(function(){
+	$("#J_loginOut").on("click",function(){
+		layer.confirm('您确定要退出当前账号吗？', {
+			btn: ['确定','取消'] //按钮
+		}, function(){
+				isLogin();
+		}, function(){
+		    
+		});
+	
+	})
+})
+ function isLogin() {
+        var Url = '/memberLoginOut';
+        echo.ajax.post(Url,null,function (res) {
+              if(res.result=="success"){
+								  layer.msg("退出成功",function(){
+										   layer.closeAll();
+										   window.location.href="/index"
+									})
+							}
+        })
+    }
+</script>

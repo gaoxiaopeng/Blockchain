@@ -1,0 +1,95 @@
+.mana_Content{overflow: hidden;width: 1200px;margin: 30px auto;box-sizing: border-box;}
+.mana_Search{margin-bottom: 30px;}
+.mana_SearchBox{float: left;width: 295px;box-sizing: border-box;height: 40px;line-height: 40px;background: #E5E5E5;}
+.mana_SearchBox img{width: 40px;float: left;cursor: pointer;}
+.mana_SearchBox input{border: 0;background: none;outline: none;float: left;width: 250px;box-sizing: border-box;;line-height: 40px;font-size: 18px;}
+.mana_Tab{border: 1px solid #2F53B1;margin-bottom: 30px;}
+.mana_Tab li{border-right: 1px solid #2F53B1;float: left;width: 14.28%;height: 45px;background: white; text-align: center;line-height: 45px;font-size: 16px;cursor: pointer;}
+.mana_Tab li:last-child{border: 0;}
+.mana_TabCon a {float: left;width: 100%;text-align: center;line-height: 45px;overflow: hidden;  text-overflow: ellipsis;float: left;height: 45px;}
+.mana_Tab .this_Tab{background:#2F53B1;color: white;}
+.mana_TabCon li{float: left;width: 100%;background: white; box-sizing: border-box;;font-size: 14px;text-align: center;}
+.mana_TabCon span,.mana_TabCon a{box-sizing: border-box; white-space: nowrap; color: #333; overflow: hidden;  text-overflow: ellipsis;float: left;height: 45px;line-height: 45px;text-align: center;}
+.del_Ico{cursor: pointer;}
+.top span{font-weight: bold;}
+.mana_TabCon>li{display: none;}
+.mana_TabCon>li:first-child{display: block;}
+
+
+/*全部文件*/
+.total_List{border: 1px solid #ddd; }
+.total_List span{width: 15%;border-right: 1px solid #ddd;}
+.total_List .byTime{width:15%;cursor: pointer;}
+.total_List>li{border-bottom: 1px solid #ddd;}
+.total_List .top{background:#8091BD; }
+
+
+
+/*待我签*/
+.wait_Me{border: 1px solid #DDDDDD; }
+.wait_Me span{width: 15%; border-right: 1px solid #DDDDDD;}
+.wait_Me>li{border-bottom: 1px solid #DDDDDD;}
+.wait_Me .top{background:#8091BD; }
+.wait_Me>li>span:first-child{cursor: pointer;}
+.wait_Me>li>span:first-child:hover{text-decoration: underline;}
+.wait_Me .top>span:first-child{cursor: default;}
+.wait_Me .top>span:first-child:hover{text-decoration: none;}
+
+/*待对方签*/
+.wait_You{border: 1px solid #DDDDDD; }
+.wait_You span{width: 15%;border-right: 1px solid #DDDDDD;}
+.wait_You>li{border-bottom: 1px solid #DDDDDD;}
+.wait_You .top{background:#8091BD; }
+.wait_You>li>span:first-child{cursor: pointer;}
+.wait_You>li>span:first-child:hover{text-decoration: underline;}
+.wait_You .top>span:first-child{cursor: default;}
+.wait_You .top>span:first-child:hover{text-decoration: none;}
+
+/*已完成*/
+.sign_Done{border: 1px solid #DDDDDD; }
+.sign_Done span{width: 10%;border-right: 1px solid #DDDDDD;}
+.sign_Done>li{border-bottom: 1px solid #DDDDDD;}
+.sign_Done .top{background:#8091BD; }
+.sign_Done>li>span:first-child{cursor: pointer;}
+.sign_Done>li>span:first-child:hover{text-decoration: underline;}
+.sign_Done .top>span:first-child{cursor: default;}
+.sign_Done .top>span:first-child:hover{text-decoration: none;}
+.sign_Done button {width: 80px; height: 30px; padding: 0; line-height: 30px; text-align: center;  }
+
+/*已拒签*/
+.refuse_List{border: 1px solid #DDDDDD; }
+.refuse_List span{width: 15%;border-right: 1px solid #DDDDDD;}
+.refuse_List>li{border-bottom: 1px solid #DDDDDD;}
+.refuse_List .top{background:#8091BD; }
+.refuse_List>li>span:first-child{cursor: pointer;}
+.refuse_List>li>span:first-child:hover{text-decoration: underline;}
+.refuse_List .top>span:first-child{cursor: default;}
+.refuse_List .top>span:first-child:hover{text-decoration: none;}
+
+/*已拒签*/
+.sign_Draft{border: 1px solid #DDDDDD; }
+.sign_Draft span{width: 15%;border-right: 1px solid #DDDDDD;}
+.sign_Draft>li{border-bottom: 1px solid #DDDDDD;}
+.sign_Draft>li span:last-child{width: 10%;}
+.sign_Draft .top{background:#8091BD; }
+.sign_Draft>li>span:first-child{cursor: pointer;}
+.sign_Draft>li>span:first-child:hover{text-decoration: underline;}
+.sign_Draft .top>span:first-child{cursor: default;}
+.sign_Draft .top>span:first-child:hover{text-decoration: none;}
+
+
+
+.is_DelBox{width: 380px;height: 190px;padding: 0 50px;}
+.is_DelTit{line-height: 110px;font-size: 22px;text-align: center;}
+.is_DelOpr{}
+.is_DelOpr button{height: 35px;line-height: 35px;cursor: pointer;font-size: 18px;border-radius: 5px; float: left;width: 125px;color: white;}
+.is_DelOpr button:first-child{background: #999;float: left;}
+.is_DelOpr button:last-child{background: #2E52AE;float: right;}
+
+.creTit{float: left;width: 100%;box-sizing: border-box;text-align: center;font-size: 18px;line-height: 30px;height: 30px;font-weight: bold;}
+.classFade{position: absolute;padding: 20px; width: 500px;height: 290px;background: white;border-radius: 10px;left: 0;right: 0;bottom: 0;top: 0;margin: auto;}
+.fade_Close{position: absolute;right: 20px;top: 20px;cursor: pointer;}
+.classFade input{float: left;width: 100%;box-sizing: border-box;height: 40px;line-height: 40px;padding: 0 15px;background: #E6E6E6;;border-radius: 5px; margin-top: 20px;}
+.creatSignBtn {height: 40px;margin-top: 10px;}
+.signTip{font-size: 12px;line-height: 30px;text-align: left;color: red;}
+

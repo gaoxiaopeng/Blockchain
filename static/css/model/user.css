@@ -1,0 +1,162 @@
+.userContent{float: left;width: 100%;box-sizing: border-box;overflow: hidden;padding: 0 95px; }
+.userBox{margin-top: 40px;}
+.userTitle{height:55px;line-height: 55px;color: #2F53B1;font-weight: bold; border-bottom: 1px solid #01237C;text-align: left;font-size:21px; }
+
+
+
+/*未认证*/
+.userList {margin-top: 32px;padding-bottom: 55px;}
+.userList li{margin-top: 10px; }
+.userList li>p{width:270px;float: left;font-size:14px;text-align: right;height: 40px;line-height: 40px;padding-right: 20px; }
+.userList li>div{width:300px; float: left;font-size: 20px; text-align: left; }
+.userList li input{height: 40px;;width:300px;font-size: 16px; float: left;border: 0;outline: none;background:#E6E6E6;color: #333;box-sizing: border-box;padding-left: 15px; }
+.userList li .in1,.userList li img{width:180px;}
+.userList li img{cursor: pointer;}
+.userSendBtn{float: right;width: 100px;cursor: pointer; box-sizing: border-box; height: 40px;text-align: center;line-height:40px;font-size: 16px;color: white;background: #768ECC;border-radius: 5px; }
+.keyBox{padding-top:35px; }
+.alias,.auth{ height: 40px;  width: 300px;display: block;  margin:0 auto 30px auto;overflow: hidden;  border: 0;  outline: none;  background: #E6E6E6;  color: #333;  box-sizing: border-box;  padding-left: 15px;}
+.auth{margin-bottom: 10px;}
+.keyTxt{height:45px;line-height: 45px;text-align: center;font-size:21px;color: #8D8D8D; }
+.publicKeys{line-height: 30px;font-size:16px;color: #8D8D8D;display: block;width: 100%;box-sizing: border-box;padding: 0 20px;margin-bottom: 20px; }
+.keyBtn{width: 250px;margin: 0  auto; ;cursor: pointer; background: #768ECC; height:35px;line-height: 35px;text-align: center;color: white;font-size:16px;border-radius: 5px;  }
+.kb1{margin-bottom:  30px}
+.kb2{margin-bottom:68px; }
+.keyBtn:hover{background: #6279B6;}
+.userSendBtn:hover{background: #6279B6;}
+.publicKeys{border: 0;outline: none;background: none;color: #8D8D8D;}
+.litip{float:left;width: 100%;height: 20px;line-height: 20px;font-size: 14px;color: #C42929;text-align: center;margin-bottom: 10px;}
+
+.fixed_Center{position: fixed;z-index: 1;width: 100%;height: 100%;padding-bottom: 80px;top: 80px;left: 0;right: 0;margin: auto}
+.h100{height: 100%;}
+
+/*用户layout*/
+.userLeft{position: absolute;left: 0;width: 160px; height: 100%;box-sizing: border-box;padding-bottom:80px;left: 0;top:0;background: #E6E6E6;border-right: 5px solid #C4C4C4;}
+.userLeft li{float: left;cursor: pointer; width: 100%;color: #9A9A9A; height: 55px;font-size: 15px; border-bottom: 1px solid #B8B8B8;line-height:55px;text-align: center;}
+.userLeft .this_UserMenu {color: #2F53B1;}
+.user_Con{float: left;width: 100%;box-sizing: border-box;padding-left: 160px;}
+.user_Fun{float: left;width: 100%;background: white;}
+.user_FunCon{float: left;width: 100%;padding: 35px 90px 90px 100px;}
+.user_AccountTitle{height:55px;line-height: 55px;color: #2F53B1;font-weight: bold; border-bottom: 1px solid #01237C;text-align: left;font-size:18px; }
+
+
+/*账号信息*/
+.account_List {margin-top: 20px;}
+.account_List li{float: left;width: 100%;margin-top:10px;font-size:18px;color: #000;}
+.account_List li>p,.account_List li>div{float: left;line-height:35px;font-size:14px;color: #000;}
+.account_List li>p{width: 160px;text-align: right;}
+.account_List li input{float: left;width: 165px;margin-right:10px;border: 0;outline: none;background:#E6E6E6;color: #333;box-sizing: border-box;padding-left: 15px; }
+.acc_Btn{font-size: 15px;color: white;float: left;cursor: pointer; background: #2F53B1;width: 108px;text-align: center;line-height:35px;height: 35px;border-radius: 5px;}
+.acc_Btn:hover {background:#768ECC ;}
+.acc_Ok{font-size: 16px;margin-top:70px;margin-left: 160px;  color: white;float: left;cursor: pointer; background:  #2F53B1;width: 125px;text-align: center;line-height:35px;height: 35px;border-radius: 5px;}
+.acc_Ok:hover{background: #768ECC;}
+
+
+
+/*签章管理*/
+.user_SignList{margin-top:20px;height: 400px; padding: 20px; background: #E6E6E6;border: 1px solid #ccc;overflow-y: scroll;overflow-x: hidden;}
+.user_SignList li{width: 130px;height: 130px;margin:15px; float: left;background: white;}
+
+.user_SignList li img{width: 100%;}
+.sign_Choice{margin-top:30px; }
+.sign_file{float: left;cursor: pointer; margin-left:40px;width: 140px;height: 90px;border: 1px dotted #BBBBBB;border-radius: 10px; }
+.sign_file img { color: #BBBBBB;font-size: 40px;display: block;width: 40px; margin: 10px auto;text-align: center;}
+.sign_file span{font-size: 16px;color: #8D8D8D;text-align: center;display: block;width: 100%;}
+
+.sign_Fade,.link_Fade{display: none; position: fixed;width: 100%;height: 100%;background: rgba(0,0,0,0.5);top: 0;left: 0;z-index: 99999;}
+.sign_Get{width: 600px;padding:30px; height:460px;box-sizing: border-box;border-radius: 10px;box-shadow: 0 0 20px #333; position: absolute;top: 0;right: 0;left: 0;bottom: 0;margin: auto;background: white;}
+.file_Btn{float: left;width:130px;height: 35px;cursor: pointer; line-height: 35px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 16px;}
+.file_Btn:hover{background:#253F85; }
+.file_Name{float: left;width:145px;height: 35px;line-height: 35px; margin-left: 10px;font-size: 16px; border: 1px solid #212121;background:white;color: #333;box-sizing: border-box;padding-left: 15px; }
+.fileImgBox{width: 100%;height: 250px;background: #E6E6E6;margin: 20px auto;}
+.sign_GetBtnBox{margin-top: 20px;padding: 0 15px;}
+
+.sign_GetBtnBox button{float: left; width:120px;height: 35px;display: inline; cursor: pointer; line-height: 35px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 16px;}
+.sign_GetBtnBox button:last-child{float: right;}
+.sign_GetBtnBox button:hover{background: #6279B6;}
+#slider span{outline: none;border-radius: 100%;transition: none;background: white;cursor: pointer;}
+
+/* 2019-1-29 S  新增手写签名  */
+
+ .saveimg{
+            text-align: center;
+        }
+        .saveimgs span{
+            display: inline-block;
+            margin-top:5px;
+        }
+.canvasBox{
+	background-color: #fff;
+    display: block;
+    width: 600px;
+	height: 400px;
+    margin: 200px auto;
+    padding: 20px 50px;
+	text-align: center;
+}
+.canvasBox button{ margin: 5px 20px;}
+.canvasBox button i{font-size: 16px; margin-right: 10px;}
+
+/* 2019-1-29 E  新增手写签名  */
+
+/*联系人管理*/
+.link_Con{padding:0 80px;}
+.link_Serch{margin-top:40px; }
+.link_Serch>span{font-size:16px;height:30px;line-height: 30px;float: left; }
+.serch_Box{float: left;height:30px;line-height:30px;margin: 0 10px;background: #E6E6E6;width: 210px;}
+.serch_Box img{height: 30px; float: left}
+.serch_Box input{height: 30px;line-height: 30px;width: 150px;font-size: 16px; float: left;padding-left: 15px;box-sizing: border-box;border: 0;outline: none;background: none;}
+.serch_Btn{float: left; width:110px;height: 30px;display: inline; cursor: pointer; line-height:30px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 16px;}
+.serch_Btn:hover{background: #6279B6;}
+.serch_List{margin-top: 25px;border: 1px solid #ddd;}
+.serch_List li{float: left;width: 100%;height: 45px;line-height:45px;}
+.serch_List .serch_top{background:#2F53B1!important;border: 0; height: 45px;line-height: 45px;}
+.serch_List .serch_top span{color: white;font-size:16px;font-weight: bold;height: 45px;line-height: 45px;}
+.serch_List li:nth-child(2n) {background: #E6E6E6;border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;}
+.serch_List li span{font-size: 14px;text-align: center;float: left;height: 45px;line-height: 45px; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;border-right: 1px solid #ddd;}
+.serch_List li input{font-size: 16px;text-align: center;float: left;height: 45px;line-height: 45px; overflow: hidden;border: 0;background: none;outline: none;}
+.serch_List li span:nth-child(1){width: 15%;}
+.serch_List li span:nth-child(2){width: 20%;}
+.serch_List li span:nth-child(3){width: 25%;}
+.serch_List li span:nth-child(4){width: 20%;}
+.serch_List li span:nth-child(5){width: 20%;}
+.serch_List li input{width: 20%;}
+
+
+
+.link_Add{;width:420px;height:370px;padding: 40px; box-sizing: border-box;border-radius: 10px;box-shadow: 0 0 20px #333; position: absolute;top: 0;right: 0;left: 0;bottom: 0;margin: auto;background: white;}
+.link_Add_Con{margin-bottom: 20px;}
+.link_Add_Tit{float: left;width: 100%;height:40px;line-height: 40px;font-size: 18px; }
+.link_Add_Box{float: left;height:35px;line-height:35px;background: white;border: 1px solid #000; width: 100%;}
+.link_Add_Box img{height: 35px;float: left}
+.link_Add_Box input{height: 35px;line-height: 35px;width: 200px;font-size:16px; float: left;padding-left: 15px;box-sizing: border-box;border: 0;outline: none;background: none;}
+.link_Add_Btn{float: left; width:100%;margin-top: 20px; height:  35px;display: inline; cursor: pointer; line-height:  35px; border-radius: 5px;background: #2F53B1;color: white;text-align: center;font-size: 15px;}
+.link_Add_Btn:hover{background:#253F85; }
+.link_Close{width: 30px;position: absolute;right: 20px;top: 20px;cursor: pointer;}
+
+
+
+.img-container,
+.img-preview {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.img-container img{    transition: none;}
+
+.preview-lg {
+    width: 35px;
+    height: 35px;
+    float: left;;
+    margin-left: 20px;
+}
+
+/*在线扫码*/
+.add_Box{width: 380px;height: 430px;padding: 100px 20px;}
+.add_Btn{float: left;background: #2F53B1;margin-top: 32px; text-align: center;color: white;border-radius: 5px; width:100%;height: 35px;line-height: 35px;box-sizing: border-box; }
+.add_Btn:hover{background: #6279B6;}
+.code_Box{width: 380px;height: 430px;padding: 60px 55px;}
+.code_Img{float: left; width: 100%;}
+.code_Txt{line-height: 30px;font-size: 18px;text-align: center;margin-top: 20px;}
+.fade_Close{position: absolute;right: 20px;top: 20px;cursor: pointer;}

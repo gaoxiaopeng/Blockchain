@@ -1,0 +1,11 @@
+.loginMain{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index: 99999;;}
+.loginBox{width: 480px; padding: 50px 90px 0 90px; box-sizing: border-box;float: left; height: 285px; background: white;border-radius: 10px;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;}
+.inputBox{height:40px;background: #E6E6E6;padding: 10px;margin-bottom: 15px;}
+.inputBox input{float: left;background: #E6E6E6;border: 0;outline: none; box-sizing: border-box;height: 100%;font-size: 18px;}
+.input1{width: 100%;}
+.input2{width: 165px;}
+.inputBox input::-webkit-input-placeholder {  color: #C2C1C1;  }
+.sendTxt{float: right;height:23px;border: 0;background: none; outline: none; padding-left: 10px;cursor: pointer; width: 105px;box-sizing: border-box;border-left: 2px solid #C2C1C1;font-size: 18px;color:#444;line-height: 23px;  }
+.loginBtn{float: left;cursor: pointer; margin-top: 15px;width: 100%;height: 35px;border-radius: 18px; line-height: 35px;;color: white;text-align: center;font-size: 18px;background: #768ECC;}
+.loginBtn:hover{background: #6279B6;}
+.login_Close{width: 25px;position: absolute;right: 20px;top: 20px;cursor: pointer;}

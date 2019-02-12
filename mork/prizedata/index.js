@@ -1,0 +1,78 @@
+/**
+ * Created by Echonessy on 2018/10/19.
+ */
+//中奖列表测试数据
+const prizeData = [
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺1天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺2天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺3天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺4天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺5天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺6天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"爱奇艺7天会员",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":false
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"杨毅牌丝袜",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":true
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"杨毅牌丝袜",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":true
+    },
+    {
+        "imgSrc":"/static/images/slots/test.jpg",
+        "title":"杨毅牌丝袜",
+        "time":"有效期：2018.10.19-2018.10.26",
+        "intro":"请在有效期内尽快激活，过期作废",
+        "used":true
+    }
+];
+
+module.exports  = prizeData;

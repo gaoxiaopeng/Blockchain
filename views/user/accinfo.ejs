@@ -1,0 +1,25 @@
+
+<div class="user_FunCon">
+  <p class="user_AccountTitle">认证状态</p>
+  <input type="hidden" id="id">
+  <input type="hidden" id="memberImg">
+  <input type="hidden" id="idCardFrontImg">
+  <input type="hidden" id="idCardBackImg">
+  <input type="hidden" id="privateKeysFileUrl">
+  <input type="hidden" id="addTime">
+  <ul class="single account_List">
+    <li><p>姓名：</p><div id="name"></div></li>
+    <li><p>身份证号：</p><div id="idCard"></div></li>
+    <li><p>手机号：</p><div id="phone"></div></li>
+    <li><p>公钥：</p><div id="publicKeys" style="width: 475px;"></div></li>
+    <li><p>工作单位：</p>
+      <div><input type="text" id="company">
+        <button class="acc_Btn" id="enterprise" data-method="offset" data-type="t">企&nbsp;业&nbsp;认&nbsp;证</button>
+				<small style="margin-left:30px;color:#999"> * 向企业管理员账户发起认证请求</small>
+      </div>
+    </li>
+    <li><p>职位：</p><div><input type="text" id="position"></div>
+    </li>
+  </ul>
+  <button class="acc_Ok" id="memberUpdateBtn">确&nbsp;&nbsp;定</button>
+</div>

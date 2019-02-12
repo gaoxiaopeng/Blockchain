@@ -1,0 +1,32 @@
+<% include ../layout/webheader.ejs%>
+<!--<form action="http://39.96.22.77:80/upload/1"  target="myIframe" id="form" method="post" enctype="multipart/form-data">-->
+<form  id="formPost" method="post">
+    <button type="button" class="btn btn-primary" onclick="$('input[id=filePost]').click();">选择文件</button>
+    <input  name="file" type="file" style="display: none;" id="filePost"  data-header="">
+    <button type="button"  class="btn btn-primary" id="uploadBtn">上传</button>
+</form>
+<script>
+    function uploadEvt(Url,formDom,fileDom,callBack) {
+        var sessionId = window.localStorage.getItem('cookie');
+        if(sessionId) {
+            $(fileDom).attr('data-header', sessionId);
+        }
+        var fileDom = $(fileDom);
+        var formDom = $(formDom);
+        if(!fileDom[0].files[0]) {layer.msg("请选择文件");return}
+        echo.ajax.upldFile(Url,formDom,fileDom,function (data) {
+            callBack(data);
+        },function (err) {
+
+        });
+    }
+    $('#uploadBtn').on('click', function() {
+        var Url = "/upload1";
+        var formDom = "#formPost";
+        var fileDom = "#filePost";
+        uploadEvt(Url,formDom,fileDom,function (data) {
+            console.log(data)
+        })
+    });
+</script>
+<% include ../layout/nullfooter.ejs%>

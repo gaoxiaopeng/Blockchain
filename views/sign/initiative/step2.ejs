@@ -1,0 +1,55 @@
+<%include ../../layout/webheader.ejs%>
+<link rel="stylesheet" href="/static/css/model/sign.css">
+<%include ../layout/signheader.ejs%>
+<%include ../layout/addsignature.ejs%>
+<%include ../layout/identity.ejs%>
+<div class="new_Content">
+  <div class="sign_Con">
+    <div class="single"><button class="back_Manage"><a href="/sign">上一步</a></button></div>
+    <div class="single sign_Box">
+      <div class="sign_Left">
+        <div class="sign_Intro">
+          <p class="intro_Txt">Step1 合同信息：</p>
+          <div class="intro_Signle">
+            <span class="left">合同名称：</span><span id="contactName"></span>
+          </div>
+          <div class="intro_Signle">
+            <span class="left">截止日期：</span><span id="contactTime"></span>
+          </div>
+          <div class="intro_Signle">
+            <span>备注：</span><span class="bacDC" id="contactRemark"></span>
+          </div>
+        </div>
+        <div class="sign_Intro">
+          <p class="intro_Txt">Step2 签署方：</p>
+          <ul class="single intro_Signle" id="intro_Signle" ></ul>
+        </div>
+        <div class="sign_Intro">
+          <p class="intro_Txt">Step3 提交签名：</p>
+          <div class="sign_Img" id="sign_Img">
+            <div class="drag_Box">
+              <img src="" id="my_SignImg"  class="" alt="">
+            </div>
+          </div>
+          <span class="intro_Drag">（左键点击拖动至右侧合适位置）</span>
+          <button class="change_Btn" id="change_Btn">更改签章</button>
+        </div>
+      </div>
+      <div class="sign_Right">
+        <div class="MainBox" id="MainBox">
+          <div class="DragBox" id="DragBox"></div>
+          <img src="" id="showBase64" alt="">
+          <div class="ImgBoxMain" id="ImgBoxMain"></div>
+        </div>
+        <div class="sign_Opr single">
+          <button id="start_Sign">发起签署</button>
+          <button id="saveDraft">存草稿</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Result"></div>
+<script src="/static/js/sign/step2.js"></script>
+
+<%include ../../layout/nullfooter.ejs%>

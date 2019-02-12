@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,user-scalable=no"/>
+  <title>手写签名</title>
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/appcode/index.css">
+  <script src="/static/js/common/fontSize.js"></script>
+  <script src="/static/js/common/jquery.min.js"></script>
+</head>
+<body>
+<div class="app_Content" id="app_Content">
+  <p class="app_Tit">请描绘您的签名</p>
+  <div class="single" style="background: #ccc;">
+    <canvas id="myCanvas" style="box-sizing: border-box;border: 1px dashed #ccc;"></canvas>
+  </div>
+  <div class="buttonBox">
+    <input type="text" id="phone" placeholder="用户手机号" class="phoneTxt">
+    <button onclick="clean()">清除</button>
+    <button onclick="save()">保存</button>
+  </div>
+</div>
+<script src="/static/js/appcode/creatcanvas.js"></script>
+</body>
+</html>

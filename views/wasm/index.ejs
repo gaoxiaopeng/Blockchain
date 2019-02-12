@@ -1,0 +1,40 @@
+<%include ../layout/webheader.ejs%>
+
+<style>
+    .main{box-sizing: border-box;padding: 40px;overflow: hidden;}
+    .textBox{  float: left;;width: 100%;  margin: 40px 0 ;  }
+    .textBox span{float: left;;padding:0 15px; line-height: 35px;font-size: 16px;}
+    .textBox input{width: 300px;float: left;margin-left: 20px;}
+    .textBox button{;float: left;margin-left: 20px;}
+    .result{float: left;width: 100%;margin: 20px 0;box-sizing: border-box;padding: 20px;border: 1px solid #ccc;border-radius: 10px;}
+    .title{float: left;width: 100%;line-height: 60px;text-align: left;font-size: 16px;}
+</style>
+<div class="main">
+    <div class="textBox">
+        <span>auth&alias:</span>
+        <input type="text" class="form-control" id="alias" placeholder="用户名">
+        <input type="text" class="form-control" id="auth" placeholder="输入密码auth">
+        <button class="btn btn-primary" id="creat_Key">创建加密串</button>
+    </div>
+    <p class="title">creatKey:</p>
+    <div id="creatKey" class="result"></div>
+    <p class="title">signMessage:</p>
+    <div id="signMessage" class="result"></div>
+</div>
+<div class="main">
+    <div class="textBox">
+        <span>auth&alias:</span>
+        <input type="text" class="form-control" id="read_alias" placeholder="用户名">
+        <input type="text" class="form-control" id="read_auth" placeholder="输入密码auth">
+        <button class="btn btn-primary" id="read_Key">读写文件</button>
+    </div>
+    <p class="title">读写文件JSON内容:</p>
+    <div id="read_Key_Data" class="result"></div>
+
+</div>
+
+<script src="/static/js/wasm/wasm.js"></script>
+<script src="/static/js/wasm/index.js"></script>
+<%include ../layout/nullfooter.ejs%>
+
+

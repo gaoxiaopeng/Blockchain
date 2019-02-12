@@ -1,0 +1,59 @@
+<%include ../../layout/webheader.ejs%>
+<link rel="stylesheet" href="/static/css/model/sign.css">
+<%include ../layout/signheader.ejs%>
+<div class="new_Content">
+  <div class="single info_Box">
+    <div class="single info_IntroBox">
+      <div class="info_Intro">
+        <p><span>合同名称：</span><span id="contractName"></span></p>
+        <a href="" class="info_Look" target="_blank" id="contractUrl">（点击预览）</a>
+      </div>
+      <div class="info_Intro">
+        <span>合同状态：</span>
+        <span id="contractStatus"></span>
+      </div>
+      <div class="info_Intro">
+        <span>合同编号：</span>
+        <span id="contractNo"></span>
+      </div>
+      <div class="info_Intro">
+        <p class="w270">
+          <span>发起时间：</span>
+          <span id="startTime"></span>
+        </p>
+        <span>签署时间：</span>
+        <span id="signTime"></span>
+      </div>
+      <div class="info_Intro">
+        <p class="w270">
+          <span>发起人：</span>
+          <span class="w119" id="initiatorName">我</span>
+        </p>
+        <span>发起人账号（手机）：</span>
+        <span id="initiatorPhone"></span>
+      </div>
+    </div>
+    <p class="info_Tit">签约主体信息：</p>
+    <ul class="single info_List" id="roleList"></ul>
+    <p class="info_Tit">合同存证信息：</p>
+    <ul class="single info_List info_List_Two" id="proofList"></ul>
+		
+		<p class="info_Tit">上链信息：</p>
+    <div class="single info_Botxt">
+      <span>TX_ID1：</span>
+      <a href="" id="J_contractStartBlockUrl"></a>
+      
+    </div>
+    <div class="single info_Botxt">
+       <span>TX_ID2：</span>
+      <a href="" id="J_contractEndBlockUrl"></a>
+    </div>
+		<p> <span class="fs14" style="padding: 20px 20px 20px 0px;height: 50px;line-height: 50px;">在区块链浏览器中查询</span> <a href="https://blockmeta.com">https://blockmeta.com</a></p>
+    <div class="single back_SignBtn">
+      <button><a href="/sign">返回主页</a></button>
+    </div>
+  </div>
+
+</div>
+<script src="/static/js/sign/signInfo.js"></script>
+<%include ../../layout/nullfooter.ejs%>

@@ -1,0 +1,7 @@
+.app_Content{float: left;width: 100%;position: fixed;top:0;left: 0; box-sizing: border-box;overflow: hidden;}
+.app_Tit{background:  #2E52AE; float: left;width: 100%;box-sizing: border-box;text-align: center; line-height: 1.5rem;font-size: .5rem;color: #fff;text-align: center;}
+.buttonBox{float: left;width: 100%;box-sizing: border-box;padding: 0.5rem;}
+.buttonBox button{float: left;width: 100%;height: 1.2rem;line-height: 1.2rem;font-size: .4rem;border-radius: .2rem; color: white;margin-bottom: .5rem;}
+.buttonBox button:first-child{background: #ed4014;}
+.buttonBox button:last-child{background: #2d8cf0;}
+.phoneTxt{float: left;width: 100%;box-sizing: border-box;height: 1.2rem;border: 1px solid #2d8cf0;padding: 0 .5rem; line-height: 1.2rem;font-size: .38rem;border-radius: .2rem; margin-bottom: .5rem;}

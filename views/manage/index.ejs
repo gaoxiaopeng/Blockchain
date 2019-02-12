@@ -1,0 +1,129 @@
+<%include ../layout/webheader.ejs%>
+<%include ../layout/header.ejs%>
+<link rel="stylesheet" href="/static/css/model/manage.css">
+
+  <div class="mana_Content">
+		
+		<div class="layui-col-md12">
+		  <div class="layui-card">
+		    <div class="layui-card-header">
+					<div class="single mana_Search">
+					  <div class="mana_SearchBox">
+					    <img src="/static/img/model/serch.png" alt="">
+					    <input type="text" id="J_searchKey">
+					  </div>
+					</div>
+					</div>
+		    <div class="layui-card-body">
+					<input type="hidden" id="J_mana_Tab">
+		     <ul class="single mana_Tab" id="mana_Tab">
+		     	<li class="this_Tab" data-value="all">全部文件</li>
+					<li data-value="expire">即将截止</li>
+		     	<li data-value="waitmine">待我签</li>
+		     	<li data-value="waitother">待对方签</li>
+		     	<li data-value="complete">已完成</li>
+		     	<li data-value="refuse">已拒签</li>
+		     	<li data-value="draft">草稿箱</li>
+		     </ul>
+				 
+		     	<!--列表区-->
+		     <ul class="single mana_TabCon" id="mana_TabCon">
+		     	<!--全部-->
+		     	<li id="total_List"></li>
+					<!--即将截止-->
+					<li id="expire_List"></li>
+		     	<!--待我签-->
+		     	<li id="wait_Me"></li>
+		     	<!--待对方签-->
+		     	<li id="wait_You"></li>
+		     	<!--已完成-->
+		     	<li id="sign_Done"></li>
+		     	<!--已拒签-->
+		     	<li id="refuse_List"></li>
+		     	<!--草稿箱-->
+		     	<li id="sign_Draft"></li>
+		     </ul>
+		    </div>
+		  </div>
+		</div>
+
+
+</div>
+
+
+<!--S 日期范围弹出框 -->
+
+<div class="fade_Box" id="J_rangeTimeBox">
+	
+  <div class="is_DelBox box_Center">
+	<p class="box_title">请选择时间范围</p>
+	<input type="text" style="display:none" id="J_searchType">
+	<input type="text" class="layui-input" id="J_searchTime" placeholder=" - " style="margin:25px 0px">
+    <div class="single is_DelOpr">
+      <button class="del_No" id="J_cencal_btn">取 消</button>
+			<button class="del_Ok" id="J_seach_btn">确 定</button>
+    </div>
+  </div>
+</div>
+<!--E 日期范围弹出框 -->
+
+<!--S 标签修改弹出框 -->
+
+<div class="fade_Box" id="J_lableBox">
+	
+  <div class="is_DelBox box_Center" style="height:250px;width:420px">
+	<p class="box_title" id="J_OldLable">修改标签</p>
+	<input type="hidden" id="J_contractId">
+	<p>重命名：<input id="J_LableName" type="text" class="layui-input"  style="margin:25px 0px;width: 220px;display:initial;"></p>
+	<p>移动到：<select id="J_lableList" name="modules" lay-verify="required" lay-search="" style="width:220px;display: initial;height: 36px;line-height: 36px; margin-bottom: 30px;"></select></p>
+    <div class="single is_DelOpr">
+      <button class="del_No J_cencal_btn" >取 消</button>
+			<button class="del_Ok J_sure_btn" >确 定</button>
+    </div>
+  </div>
+</div>
+<!--E 标签修改弹出框 -->
+
+
+
+<!--S 根据标签查询-->
+<div class="fade_Box" id="J_lableSearchBox">
+  <div class="is_DelBox box_Center" style="height:200px;width:420px;padding:50px">
+	<p><select id="J_lableListSearch" name="modules" lay-verify="required" lay-search="" style="width:100%;display: initial;height: 36px;line-height: 36px; margin-bottom: 30px;"></select></p>
+    <div class="single is_DelOpr">
+      <button class="del_No J_cencal_btn" >取 消</button>
+			<button class="del_Ok J_sure_btn" >查 询</button>
+    </div>
+  </div>
+</div>
+<!--E 标签修改弹出框 -->
+
+
+<!--是否删除-->
+<div class="fade_Box" id="is_Del" >
+  <div class="is_DelBox box_Center">
+    <p class="single is_DelTit">是否删除此项目</p>
+    <div class="single is_DelOpr">
+      <button class="del_Ok">删&nbsp;除</button>
+      <button class="del_No">取&nbsp;消</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="fade_Box" id="creatSign">
+  <div class="classFade">
+    <img src="/static/img/layout/close.png" alt="" class="fade_Close">
+    <p class="creTit">签名</p>
+    <input type="text" id="alias" class="input1" maxlength="11" placeholder="请输入手机号码">
+    <input type="text" id="auth" class="input1" placeholder="请输入私钥密码">
+    <span class="single signTip">* 注：此处号码为注册手机号，密码为生成私钥设置的密码</span>
+    <button class="single btn btn-primary creatSignBtn " data-hash="{}" id="creatSignBtn">确认</button>
+  </div>
+</div>
+
+<script src="/static/js/wasm/wasm.js"></script> 
+<script src="/static/js/manage/index.js"></script>
+<%include ../layout/nullfooter.ejs%>
+
+

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/static/css/model/signlayout.css">
+<div id="iden_Box" class="fade_Box">
+    <div class="iden_Box box_Center">
+        <img src="/static/img/layout/close.png" alt="" class="fade_Close">
+        <p class="single iden_Tit">身份验证</p>
+        <div class="single iden_Con">
+            <p class="single iden_ConTxt" >接收手机号：<span id="sendPhone"></span></p>
+            <div class="single iden_Line">
+                <input type="text" id="verifyCode" class="input2" placeholder="请输入验证码">
+                <button class="sendTxt" id="getVerifyCode">发送验证码</button>
+            </div>
+			 <div class="single iden_Line" style="padding-top:20px">
+			    <input type="text" id="J_privateKeyPwd" class="input2" placeholder="请输私钥密码" style="width:300px">
+			</div>
+        </div>
+        <div class="single iden_CerBtn">
+            <button id="iden_CerBtn">确&nbsp;&nbsp;认</button>
+        </div>
+    </div>
+</div>
+<script src="/static/js/sign/identity.js"></script>
+

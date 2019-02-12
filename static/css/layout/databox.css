@@ -1,0 +1,9 @@
+.dataBox{width: 600px;margin: 80px auto; display: flex;flex-direction: column;justify-content: center;align-content: center; }
+.dataList{;box-sizing: border-box;float: left; overflow: hidden;margin: 0 auto; }
+.dataList li{width: 120px; box-sizing: border-box; overflow: hidden;display: inline-block;cursor: pointer;}
+.dataList li:nth-child(2) {margin: 0 115px;}
+.dataList li img,.dataList li span{float: left;width: 100%;box-sizing: border-box;text-align: center;}
+.dataNum {height: 40px;line-height:40px;font-size: 28px;color:#969696; }
+.dataFlag {height: 35px;line-height: 35px;font-size: 18px;color:#969696; }
+.can_See .dataNum{color: #273E87;}
+.can_See .dataFlag{color: #273E87;}
